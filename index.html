@@ -4,78 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Disciplinas</title>
-    <link rel="stylesheet" href="projeto.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="menu-externo">
             <ul>
-                <li><a href="#matematica">Matemática</a></li>
-                <li><a href="#portugues">Língua Portuguesa</a></li>
-                <li><a href="#fisica">Física</a></li>
-            </ul>
-        </nav>
-        <nav class="menu-interno">
-            <ul>
-                <li><a href="#atividades">Atividades</a></li>
-                <li><a href="#provas">Provas</a></li>
-                <li><a href="#pendentes">Pendentes</a></li>
+                <li><label for="matematica-tab">Matemática</label></li>
+                <li><label for="portugues-tab">Língua Portuguesa</label></li>
+                <li><label for="fisica-tab">Física</label></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Matemática -->
+        <input type="radio" id="matematica-tab" name="disciplina" class="tab" />
         <section id="matematica">
             <h2>Matemática</h2>
-            <div class="disciplinas">
-                <div class="item">
-                    <h3>Atividades</h3>
-                    <p>Conteúdo sobre atividades de matemática.</p>
-                </div>
-                <div class="item">
-                    <h3>Provas</h3>
-                    <p>Conteúdo sobre provas de matemática.</p>
-                </div>
-                <div class="item">
-                    <h3>Pendentes</h3>
-                    <p>Conteúdo sobre pendências em matemática.</p>
-                </div>
+            <p>Matemática é a ciência dos números e formas. Vamos explorar os principais tópicos desta disciplina.</p>
+
+            <div class="abas">
+                <label for="matematica-atividades" class="aba-button">Atividades</label>
+                <label for="matematica-provas" class="aba-button">Provas</label>
+                <label for="matematica-pendentes" class="aba-button">Pendentes</label>
+            </div>
+            <input type="radio" id="matematica-atividades" name="matematica" class="aba" />
+            <div class="aba-content">
+                <h3>Atividades de Matemática</h3>
+                <p>Conteúdo sobre atividades de matemática.</p>
+            </div>
+
+            <input type="radio" id="matematica-provas" name="matematica" class="aba" />
+            <div class="aba-content">
+                <h3>Provas de Matemática</h3>
+                <p>Conteúdo sobre provas de matemática.</p>
+            </div>
+
+            <input type="radio" id="matematica-pendentes" name="matematica" class="aba" />
+            <div class="aba-content">
+                <h3>Pendências de Matemática</h3>
+                <p>Conteúdo sobre pendências de matemática.</p>
             </div>
         </section>
 
+        <!-- Língua Portuguesa -->
+        <input type="radio" id="portugues-tab" name="disciplina" class="tab" />
         <section id="portugues">
             <h2>Língua Portuguesa</h2>
-            <div class="disciplinas">
-                <div class="item">
-                    <h3>Atividades</h3>
-                    <p>Conteúdo sobre atividades de língua portuguesa.</p>
-                </div>
-                <div class="item">
-                    <h3>Provas</h3>
-                    <p>Conteúdo sobre provas de língua portuguesa.</p>
-                </div>
-                <div class="item">
-                    <h3>Pendentes</h3>
-                    <p>Conteúdo sobre pendências em língua portuguesa.</p>
-                </div>
+            <p>Língua Portuguesa é rica em literatura, gramática e interpretação de textos.</p>
+
+            <div class="abas">
+                <label for="portugues-atividades" class="aba-button">Atividades</label>
+                <label for="portugues-provas" class="aba-button">Provas</label>
+                <label for="portugues-pendentes" class="aba-button">Pendentes</label>
+            </div>
+            <input type="radio" id="portugues-atividades" name="portugues" class="aba" />
+            <div class="aba-content">
+                <h3>Atividades de Língua Portuguesa</h3>
+                <p>Conteúdo sobre atividades de Língua Portuguesa.</p>
+            </div>
+
+            <input type="radio" id="portugues-provas" name="portugues" class="aba" />
+            <div class="aba-content">
+                <h3>Provas de Língua Portuguesa</h3>
+                <p>Conteúdo sobre provas de Língua Portuguesa.</p>
+            </div>
+
+            <input type="radio" id="portugues-pendentes" name="portugues" class="aba" />
+            <div class="aba-content">
+                <h3>Pendências de Língua Portuguesa</h3>
+                <p>Conteúdo sobre pendências de Língua Portuguesa.</p>
             </div>
         </section>
 
+        <!-- Física -->
+        <input type="radio" id="fisica-tab" name="disciplina" class="tab" />
         <section id="fisica">
             <h2>Física</h2>
-            <div class="disciplinas">
-                <div class="item">
-                    <h3>Atividades</h3>
-                    <p>Conteúdo sobre atividades de física.</p>
-                </div>
-                <div class="item">
-                    <h3>Provas</h3>
-                    <p>Conteúdo sobre provas de física.</p>
-                </div>
-                <div class="item">
-                    <h3>Pendentes</h3>
-                    <p>Conteúdo sobre pendências em física.</p>
-                </div>
+            <p>A Física estuda as leis fundamentais da natureza. Vamos aprender sobre conceitos dessa disciplina.</p>
+
+            <div class="abas">
+                <label for="fisica-atividades" class="aba-button">Atividades</label>
+                <label for="fisica-provas" class="aba-button">Provas</label>
+                <label for="fisica-pendentes" class="aba-button">Pendentes</label>
+            </div>
+            <input type="radio" id="fisica-atividades" name="fisica" class="aba" />
+            <div class="aba-content">
+                <h3>Atividades de Física</h3>
+                <p>Conteúdo sobre atividades de Física.</p>
+            </div>
+
+            <input type="radio" id="fisica-provas" name="fisica" class="aba" />
+            <div class="aba-content">
+                <h3>Provas de Física</h3>
+                <p>Conteúdo sobre provas de Física.</p>
+            </div>
+
+            <input type="radio" id="fisica-pendentes" name="fisica" class="aba" />
+            <div class="aba-content">
+                <h3>Pendências de Física</h3>
+                <p>Conteúdo sobre pendências de Física.</p>
             </div>
         </section>
     </main>
