@@ -31,21 +31,32 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    cursor: pointer;
   }
   
   main {
     padding: 40px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    grid-template-columns: 1fr;
+  }
+  
+  .disciplina {
+    display: none;
     max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .disciplina.ativa {
+    display: block;
   }
   
   section {
     background-color: #e0e0e0;
     padding: 20px;
     border-radius: 8px;
+    margin-bottom: 20px;
   }
   
   footer {

@@ -2,18 +2,21 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Disciplina - Matemática</title>
+  <title>Portal Acadêmico</title>
   <link rel="stylesheet" href="projeto.css">
 </head>
 <body>
   <header>
+    <!-- Menu Externo: Troca a disciplina exibida -->
     <nav class="menu-externo">
       <ul>
-        <li><a href="matematica.html">Matemática</a></li>
-        <li><a href="portugues.html">Língua Portuguesa</a></li>
-        <li><a href="fisica.html">Física</a></li>
+        <li><a onclick="mostrarDisciplina('matematica')">Matemática</a></li>
+        <li><a onclick="mostrarDisciplina('portugues')">Língua Portuguesa</a></li>
+        <li><a onclick="mostrarDisciplina('fisica')">Física</a></li>
       </ul>
     </nav>
+
+    <!-- Menu Interno: Navega entre as seções dentro da disciplina -->
     <nav class="menu-interno">
       <ul>
         <li><a href="#atividades">Atividades</a></li>
@@ -24,25 +27,66 @@
   </header>
 
   <main>
-    <section id="atividades">
-      <h2>Atividades de Matemática</h2>
-      <p>Lista de atividades e exercícios da disciplina.</p>
-    </section>
+    <!-- Matemática -->
+    <div id="matematica" class="disciplina ativa">
+      <section id="atividades">
+        <h2>Atividades de Matemática</h2>
+        <p>Lista de atividades da disciplina de Matemática.</p>
+      </section>
+      <section id="provas">
+        <h2>Provas de Matemática</h2>
+        <p>Informações sobre as provas de Matemática.</p>
+      </section>
+      <section id="notas">
+        <h2>Notas Finais de Matemática</h2>
+        <p>Resumo das notas finais de Matemática.</p>
+      </section>
+    </div>
 
-    <section id="provas">
-      <h2>Provas de Matemática</h2>
-      <p>Informações sobre as provas aplicadas.</p>
-    </section>
+    <!-- Língua Portuguesa -->
+    <div id="portugues" class="disciplina">
+      <section id="atividades">
+        <h2>Atividades de Língua Portuguesa</h2>
+        <p>Lista de atividades da disciplina de Português.</p>
+      </section>
+      <section id="provas">
+        <h2>Provas de Língua Portuguesa</h2>
+        <p>Informações sobre as provas de Português.</p>
+      </section>
+      <section id="notas">
+        <h2>Notas Finais de Língua Portuguesa</h2>
+        <p>Resumo das notas finais de Português.</p>
+      </section>
+    </div>
 
-    <section id="notas">
-      <h2>Notas Finais de Matemática</h2>
-      <p>Resumo das notas finais da disciplina.</p>
-    </section>
+    <!-- Física -->
+    <div id="fisica" class="disciplina">
+      <section id="atividades">
+        <h2>Atividades de Física</h2>
+        <p>Lista de atividades da disciplina de Física.</p>
+      </section>
+      <section id="provas">
+        <h2>Provas de Física</h2>
+        <p>Informações sobre as provas de Física.</p>
+      </section>
+      <section id="notas">
+        <h2>Notas Finais de Física</h2>
+        <p>Resumo das notas finais de Física.</p>
+      </section>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 - Portal Acadêmico | Desenvolvido por [Seu Nome]</p>
     <p>Contato: exemplo@email.com</p>
   </footer>
+
+  <script>
+    function mostrarDisciplina(id) {
+      const disciplinas = document.querySelectorAll('.disciplina');
+      disciplinas.forEach(d => d.classList.remove('ativa'));
+      document.getElementById(id).classList.add('ativa');
+    }
+  </script>
 </body>
 </html>
