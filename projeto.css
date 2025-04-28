@@ -1,68 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #ccc;
-    padding: 20px;
-  }
-  
-  nav {
-    margin-bottom: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    margin: 0 15px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  main {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .disciplina {
-    display: none;
-    max-width: 800px;
-    width: 100%;
-  }
-  
-  .disciplina.ativa {
-    display: block;
-  }
-  
-  section {
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    background-color: #ccc;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-  }
-  
+}
+
+.nav-externa ul {
+    list-style: none;
+    margin: 0;
