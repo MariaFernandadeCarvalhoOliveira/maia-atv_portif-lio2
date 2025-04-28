@@ -1,82 +1,57 @@
-/* Resetando margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: inline-flex;
+    margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav a {
+  }
+  
+  header {
+    background-color: #ccc;
+    padding: 20px;
+  }
+  
+  nav {
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 8px 16px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-
-/* Seções */
-main {
-    padding: 40px 20px;
-}
-
-.intro, .disciplina {
-    background-color: #fff;
-    margin: 20px 0;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section {
+    background-color: #e0e0e0;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.intro h2, .disciplina h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.disciplina h3 {
-    margin-top: 20px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: white;
+  }
+  
+  footer {
+    background-color: #ccc;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 14px;
-}
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  
