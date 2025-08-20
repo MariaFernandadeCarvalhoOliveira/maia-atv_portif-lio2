@@ -118,15 +118,3 @@ h1 {
 .image-item img:hover {
     transform: scale(1.05); /* Aumenta um pouco o tamanho da imagem no hover */
 }
-
-/* Responsividade para telas pequenas */
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column; /* Empilha as imagens verticalmente em telas pequenas */
-        align-items: center; /* Alinha as imagens ao centro */
-    }
-    
-    .image-item {
-        max-width: 90%; /* Limita o tamanho máximo das imagens em telas pequenas */
-    }
-}
