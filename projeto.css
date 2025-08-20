@@ -88,38 +88,49 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-  .image-container {
+/* Define um estilo básico para o container das imagens */
+.image-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem para a linha seguinte em telas pequenas */
     margin-top: 20px;
 }
 
+/* Estilo para cada item de imagem */
 .image-item {
-    max-width: 250px; 
-    width: 100%; 
-    text-align: center;
+    flex: 1 1 30%; /* Cada imagem ocupa 30% da largura disponível, ajustando automaticamente */
+    max-width: 33%; /* Limita o tamanho máximo para 33% da largura da tela */
+    text-align: center; /* Centraliza a imagem dentro do item */
+    padding: 10px; /* Adiciona um espaçamento interno ao redor da imagem */
+    box-sizing: border-box; /* Inclui o padding dentro da largura total */
 }
 
+/* Estilo para as imagens */
 .image-item img {
-    width: 100%; 
-    height: auto;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-
-.image-item img:hover {
-    transform: scale(1.05); 
+    width: 100%; /* As imagens ocupam toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Assegura que a imagem cubra o espaço disponível sem distorcer */
+    border-radius: 8px; /* Adiciona borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
+    transition: transform 0.3s ease; /* Transição suave para efeito de hover */
 }
+
+/* Efeito de hover para as imagens */
+.image-item img:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho da imagem no hover */
+}
+
+/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .image-container {
-        flex-direction: column;
-        align-items: center; 
+        flex-direction: column; /* Empilha as imagens verticalmente em telas pequenas */
+        align-items: center; /* Alinha as imagens ao centro */
     }
     
     .image-item {
-        max-width: 90%;
+        max-width: 90%; /* Limita o tamanho máximo das imagens em telas pequenas */
     }
 }
+
 }
