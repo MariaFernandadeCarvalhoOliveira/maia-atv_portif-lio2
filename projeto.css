@@ -88,33 +88,27 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* Define um estilo básico para o container das imagens */
-.image-container {
+  .image-container {
     display: flex;
-    justify-content: center; /* Centraliza as imagens horizontalmente */
-    gap: 20px; /* Espaçamento entre as imagens */
-    flex-wrap: wrap; /* Permite que as imagens se ajustem para a linha seguinte em telas pequenas */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-/* Estilo para cada item de imagem */
 .image-item {
-    max-width: 250px; /* Tamanho máximo para as imagens */
-    width: 100%; /* Faz com que a imagem ocupe a largura disponível dentro do container */
-    text-align: center; /* Centraliza a imagem dentro do item */
+    max-width: 250px; 
+    width: 100%; 
+    text-align: center;
 }
 
-/* Estilo para as imagens */
 .image-item img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Adiciona borda arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
-    transition: transform 0.3s ease; /* Transição suave para efeito de hover */
-}
+    width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 
-/* Efeito de hover para as imagens */
 .image-item img:hover {
-    transform: scale(1.05); /* Aumenta um pouco o tamanho da imagem no hover */
+    transform: scale(1.05); 
 }
