@@ -88,7 +88,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-<section class="./imagens/paodequeijo.jpg">      {
+<section class=<img src="./imagens/paodequeijo.jpg" alt="Pão de Queijo">{
             width: 100%;
             height: 400px;
             object-fit: cover;
@@ -96,7 +96,15 @@ h1 {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin: 20px 0;
         }
-<section class="<./imagens/cookie.jpg">>      {
+<section class=<img src="./imagens/cookie.jpg" alt="Cookie">{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+<section class=<img src="./imagens/bolodefuba.jpg" alt="Bolo de Fubá">{
             width: 100%;
             height: 400px;
             object-fit: cover;
