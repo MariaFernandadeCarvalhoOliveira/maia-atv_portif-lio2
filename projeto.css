@@ -88,7 +88,15 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-<section class="./imagens/paodequeijo.jpg" alt="Pão de Queijo">      {
+<section class="./imagens/paodequeijo.jpg">      {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+<section class="<./imagens/cookie.jpg">>      {
             width: 100%;
             height: 400px;
             object-fit: cover;
